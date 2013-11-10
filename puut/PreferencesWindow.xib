@@ -8,7 +8,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="PTPreferencesWindowController">
             <connections>
                 <outlet property="applyButton" destination="yn4-rk-aZX" id="lEe-Qu-dZa"/>
-                <outlet property="serverAuthEnabledButton" destination="LeK-d9-Zxw" id="9Q2-AX-82q"/>
+                <outlet property="serverAuthEnabledCheckbox" destination="LeK-d9-Zxw" id="dgp-k3-g75"/>
                 <outlet property="serverPasswordTextField" destination="uwa-e5-88O" id="SM8-WX-tX4"/>
                 <outlet property="serverUrlTextField" destination="XuP-Je-CxH" id="yUs-hf-qi2"/>
                 <outlet property="serverUsernameTextField" destination="8cL-8K-JLJ" id="dr5-Tw-WwP"/>
