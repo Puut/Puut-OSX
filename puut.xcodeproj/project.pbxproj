@@ -23,10 +23,10 @@
 		6900EBE5182E52C600BF6783 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6900EB9C182E47BA00BF6783 /* AppKit.framework */; };
 		6900EBE6182E52CF00BF6783 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6900EB9E182E47BA00BF6783 /* Foundation.framework */; };
 		6900EBED182E579600BF6783 /* PTPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6900EBEB182E579600BF6783 /* PTPreferencesWindowController.m */; };
-		6900EBEE182E579600BF6783 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6900EBEC182E579600BF6783 /* PreferencesWindow.xib */; };
 		6913318A182E71A8005F0776 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 69133189182E71A8005F0776 /* Constants.m */; };
 		6948D81B182FDC15008A49CB /* status_bar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6948D81A182FDC15008A49CB /* status_bar_icon.png */; };
 		6948D81F182FF9B1008A49CB /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6948D81E182FF9B1008A49CB /* NSData+Base64.m */; };
+		6948D82F18304CDC008A49CB /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6948D83118304CDC008A49CB /* PreferencesWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,12 +62,16 @@
 		6900EBE3182E52BE00BF6783 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		6900EBEA182E579600BF6783 /* PTPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPreferencesWindowController.h; sourceTree = "<group>"; };
 		6900EBEB182E579600BF6783 /* PTPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPreferencesWindowController.m; sourceTree = "<group>"; };
-		6900EBEC182E579600BF6783 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
 		69133188182E70F8005F0776 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		69133189182E71A8005F0776 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		6948D81A182FDC15008A49CB /* status_bar_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status_bar_icon.png; sourceTree = "<group>"; };
 		6948D81D182FF9B1008A49CB /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		6948D81E182FF9B1008A49CB /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		6948D83018304CDC008A49CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
+		6948D83218304CE9008A49CB /* de */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		6948D83418304CE9008A49CB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6948D83518304CE9008A49CB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = de; path = de.lproj/Credits.rtf; sourceTree = "<group>"; };
+		6948D83618304CE9008A49CB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F7440F574D37454E8B71AF17 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		FD2FDC0A1E4B400BA1DAD986 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -200,7 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				6900EBAE182E47BA00BF6783 /* MainMenu.xib */,
-				6900EBEC182E579600BF6783 /* PreferencesWindow.xib */,
+				6948D83118304CDC008A49CB /* PreferencesWindow.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -267,6 +271,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 6900EB8D182E47B900BF6783;
 			productRefGroup = 6900EB97182E47BA00BF6783 /* Products */;
@@ -286,7 +291,7 @@
 			files = (
 				6900EBA4182E47BA00BF6783 /* InfoPlist.strings in Resources */,
 				6900EBB2182E47BA00BF6783 /* Images.xcassets in Resources */,
-				6900EBEE182E579600BF6783 /* PreferencesWindow.xib in Resources */,
+				6948D82F18304CDC008A49CB /* PreferencesWindow.xib in Resources */,
 				6900EBAA182E47BA00BF6783 /* Credits.rtf in Resources */,
 				6948D81B182FDC15008A49CB /* status_bar_icon.png in Resources */,
 				6900EBB0182E47BA00BF6783 /* MainMenu.xib in Resources */,
@@ -372,6 +377,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6900EBA3182E47BA00BF6783 /* en */,
+				6948D83418304CE9008A49CB /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -380,6 +386,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6900EBA9182E47BA00BF6783 /* en */,
+				6948D83518304CE9008A49CB /* de */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
@@ -388,6 +395,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6900EBAF182E47BA00BF6783 /* Base */,
+				6948D83218304CE9008A49CB /* de */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -396,8 +404,17 @@
 			isa = PBXVariantGroup;
 			children = (
 				6900EBC1182E47BA00BF6783 /* en */,
+				6948D83618304CE9008A49CB /* de */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6948D83118304CDC008A49CB /* PreferencesWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6948D83018304CDC008A49CB /* Base */,
+			);
+			name = PreferencesWindow.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
