@@ -39,7 +39,65 @@
 - (void) makeScreenshotNotificationReceived:(NSNotification *) notification
 {
     if ([[notification name] isEqualToString:MakeScreenshotNotification])
-        NSLog (@"Notification is successfully received!");
+        NSLog (@"Notification is successfully received!, %@", [self makeAreaScreenshot]);
+}
+
+- (void) runProcessWithProcessName: (NSString*)processName processArguments:(NSArray*) arguments {
+    NSTask *task;
+    task = [[NSTask alloc] init];
+    [task setLaunchPath: processName];
+
+    [task setArguments: arguments];
+    
+    NSPipe *pipe;
+    pipe = [NSPipe pipe];
+    [task setStandardOutput: pipe];
+    
+    NSFileHandle *file;
+    file = [pipe fileHandleForReading];
+    
+    [task launch];
+    
+    NSData *data;
+    data = [file readDataToEndOfFile];
+    
+    NSString *string;
+    string = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+}
+
+- (NSString*) makeAreaScreenshot {
+    NSString *tempFileName = [self getTemporaryFilename];
+
+    [self runProcessWithProcessName: @"/usr/sbin/screencapture" processArguments:[NSArray arrayWithObjects: @"-i", tempFileName, nil]];
+    
+    return tempFileName;
+}
+
+- (NSString*) getTemporaryFilename {
+    NSString *tempFileTemplate =
+        [NSTemporaryDirectory() stringByAppendingPathComponent:@"upload.XXXXXX"];
+    
+    const char *tempFileTemplateCString = [tempFileTemplate fileSystemRepresentation];
+   
+    char *tempFileNameCString = (char *) malloc(strlen(tempFileTemplateCString) + 1);
+    
+    strcpy(tempFileNameCString, tempFileTemplateCString);
+    
+    int fileDescriptor = mkstemp(tempFileNameCString);
+    
+    if (fileDescriptor == -1)
+    {
+        return @"";
+    }
+    
+    NSString *tempFileName =
+    [[NSFileManager defaultManager]
+        stringWithFileSystemRepresentation:tempFileNameCString
+                                    length:strlen(tempFileNameCString)];
+    
+    free(tempFileNameCString);
+    
+    return tempFileName;
 }
 
 - (void) awakeFromNib
