@@ -66,16 +66,35 @@
  }
 
 -(IBAction)applyButtonClicked:(id)selector {
-    NSDictionary *settingsDictionary = @{
+    NSString *urlString = [serverUrlTextField stringValue];
+    NSURL *url = [NSURL URLWithString:urlString];
+    
+    if(url == nil || ![[[NSArray alloc] initWithObjects:@"http", @"https", nil ] containsObject:[url scheme]]) {
+        NSAlert *alert = [[NSAlert alloc] init];
+        
+        [alert setMessageText:@"The URL is malformed."];
+        [alert setInformativeText:@"Please correct the URL you inputtetetet"];
+        [alert setAlertStyle:NSCriticalAlertStyle];
+        
+        [alert beginSheetModalForWindow:[self window]
+                          modalDelegate:self
+                         didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:)
+                            contextInfo:nil];
+    } else {
+        NSDictionary *settingsDictionary = @{
                                KeychainDictionaryURLKey: [serverUrlTextField stringValue],
                           KeychainDictionaryUsernameKey: [serverUsernameTextField stringValue],
                           KeychainDictionaryPasswordKey: [serverPasswordTextField stringValue],
                        KeychainDictionaryAuthEnabledKey: [serverAuthEnabledCheckbox state] == NSOnState ? @"YES" : @"NO"
                                };
     
-    [keychain setObject:settingsDictionary forKey:KeychainDictionaryKey];
+        [keychain setObject:settingsDictionary forKey:KeychainDictionaryKey];
     
-    [self close];
+        [self close];
+    }
+}
+
+- (void) alertDidEnd:(NSAlert *)a returnCode:(NSInteger)rc contextInfo:(void *)ci {
 }
 
 -(IBAction)serverAuthEnabledButtonClicked:(id)selector {
