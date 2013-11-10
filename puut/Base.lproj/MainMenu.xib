@@ -22,6 +22,9 @@
                 <menuItem isSeparatorItem="YES" id="GnE-OI-n6h"/>
                 <menuItem title="Capture Screenshot" id="ddj-4Q-mSf">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="onMakeScreenshotClick:" target="494" id="Zwa-ye-NDN"/>
+                    </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="CUS-bG-m41"/>
                 <menuItem title="Quit" keyEquivalent="q" id="ySc-Ht-gc1">

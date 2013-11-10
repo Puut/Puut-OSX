@@ -14,4 +14,6 @@
     NSStatusItem * statusItem;
 }
 
+- (IBAction)onMakeScreenshotClick:(id)sender;
+
 @end

@@ -30,6 +30,12 @@
                                                object:nil];
 }
 
+-(IBAction)onMakeScreenshotClick:(id)sender {
+    [[NSNotificationCenter defaultCenter]
+        postNotificationName:MakeScreenshotNotification
+                      object:self];
+}
+
 - (void) makeScreenshotNotificationReceived:(NSNotification *) notification
 {
     if ([[notification name] isEqualToString:MakeScreenshotNotification])
