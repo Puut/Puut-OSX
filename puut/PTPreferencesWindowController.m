@@ -80,6 +80,8 @@
                           modalDelegate:self
                          didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:)
                             contextInfo:nil];
+        
+        //TODO: provice a serverside path to validate if given URL is a real puut server
     } else {
         NSDictionary *settingsDictionary = @{
                                KeychainDictionaryURLKey: [serverUrlTextField stringValue],
