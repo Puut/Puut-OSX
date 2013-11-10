@@ -10,5 +10,6 @@
 #define puut_Constants_h
 
 extern NSString *const ShortcutCapture;
+extern NSString *const MakeScreenshotNotification;
 
 #endif

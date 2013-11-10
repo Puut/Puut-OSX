@@ -19,8 +19,21 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     [MASShortcut registerGlobalShortcutWithUserDefaultsKey:ShortcutCapture handler:^{
-        NSLog(@"Heinz!");
+        [[NSNotificationCenter defaultCenter]
+            postNotificationName:MakeScreenshotNotification
+                          object:self];
     }];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(makeScreenshotNotificationReceived:)
+                                                 name:MakeScreenshotNotification
+                                               object:nil];
+}
+
+- (void) makeScreenshotNotificationReceived:(NSNotification *) notification
+{
+    if ([[notification name] isEqualToString:MakeScreenshotNotification])
+        NSLog (@"Notification is successfully received!");
 }
 
 - (void) awakeFromNib
