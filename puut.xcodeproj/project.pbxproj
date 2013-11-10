@@ -26,6 +26,7 @@
 		6900EBEE182E579600BF6783 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6900EBEC182E579600BF6783 /* PreferencesWindow.xib */; };
 		6913318A182E71A8005F0776 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 69133189182E71A8005F0776 /* Constants.m */; };
 		6948D81B182FDC15008A49CB /* status_bar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6948D81A182FDC15008A49CB /* status_bar_icon.png */; };
+		6948D81F182FF9B1008A49CB /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6948D81E182FF9B1008A49CB /* NSData+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		69133188182E70F8005F0776 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		69133189182E71A8005F0776 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		6948D81A182FDC15008A49CB /* status_bar_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status_bar_icon.png; sourceTree = "<group>"; };
+		6948D81D182FF9B1008A49CB /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		6948D81E182FF9B1008A49CB /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		F7440F574D37454E8B71AF17 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		FD2FDC0A1E4B400BA1DAD986 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -140,16 +143,16 @@
 			isa = PBXGroup;
 			children = (
 				6948D81C182FDC86008A49CB /* Resources */,
+				6948D820182FFADB008A49CB /* UI */,
 				6900EBAB182E47BA00BF6783 /* PTAppDelegate.h */,
 				6900EBAC182E47BA00BF6783 /* PTAppDelegate.m */,
-				6900EBAE182E47BA00BF6783 /* MainMenu.xib */,
-				6900EBB1182E47BA00BF6783 /* Images.xcassets */,
-				6900EBA0182E47BA00BF6783 /* Supporting Files */,
 				6900EBEA182E579600BF6783 /* PTPreferencesWindowController.h */,
 				6900EBEB182E579600BF6783 /* PTPreferencesWindowController.m */,
-				6900EBEC182E579600BF6783 /* PreferencesWindow.xib */,
 				69133188182E70F8005F0776 /* Constants.h */,
 				69133189182E71A8005F0776 /* Constants.m */,
+				6948D81D182FF9B1008A49CB /* NSData+Base64.h */,
+				6948D81E182FF9B1008A49CB /* NSData+Base64.m */,
+				6900EBA0182E47BA00BF6783 /* Supporting Files */,
 			);
 			path = puut;
 			sourceTree = "<group>";
@@ -187,9 +190,19 @@
 		6948D81C182FDC86008A49CB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6900EBB1182E47BA00BF6783 /* Images.xcassets */,
 				6948D81A182FDC15008A49CB /* status_bar_icon.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		6948D820182FFADB008A49CB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6900EBAE182E47BA00BF6783 /* MainMenu.xib */,
+				6900EBEC182E579600BF6783 /* PreferencesWindow.xib */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +343,7 @@
 			files = (
 				6900EBAD182E47BA00BF6783 /* PTAppDelegate.m in Sources */,
 				6900EBED182E579600BF6783 /* PTPreferencesWindowController.m in Sources */,
+				6948D81F182FF9B1008A49CB /* NSData+Base64.m in Sources */,
 				6900EBA6182E47BA00BF6783 /* main.m in Sources */,
 				6913318A182E71A8005F0776 /* Constants.m in Sources */,
 			);

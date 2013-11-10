@@ -7,11 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+
 #import <MASShortcutView.h>
+
+#import <FXKeychain.h>
 
 @interface PTAppDelegate : NSObject <NSApplicationDelegate> {
     IBOutlet NSMenu *statusMenu;
     NSStatusItem * statusItem;
+    FXKeychain *keychain;
 }
 
 - (IBAction)onMakeScreenshotClick:(id)sender;
