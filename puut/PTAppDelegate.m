@@ -103,9 +103,9 @@
 
 - (void) awakeFromNib
 {
-    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
     [statusItem setMenu:statusMenu];
-    [statusItem setTitle:@"puut"];
+    [statusItem setImage:[NSImage imageNamed: @"status_bar_icon.png"]];
     [statusItem setHighlightMode:YES];
     
 }

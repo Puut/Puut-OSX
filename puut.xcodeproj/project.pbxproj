@@ -25,6 +25,7 @@
 		6900EBED182E579600BF6783 /* PTPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6900EBEB182E579600BF6783 /* PTPreferencesWindowController.m */; };
 		6900EBEE182E579600BF6783 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6900EBEC182E579600BF6783 /* PreferencesWindow.xib */; };
 		6913318A182E71A8005F0776 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 69133189182E71A8005F0776 /* Constants.m */; };
+		6948D81B182FDC15008A49CB /* status_bar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6948D81A182FDC15008A49CB /* status_bar_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		6900EBEC182E579600BF6783 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
 		69133188182E70F8005F0776 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		69133189182E71A8005F0776 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		6948D81A182FDC15008A49CB /* status_bar_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status_bar_icon.png; sourceTree = "<group>"; };
 		F7440F574D37454E8B71AF17 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		FD2FDC0A1E4B400BA1DAD986 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 		6900EB9F182E47BA00BF6783 /* puut */ = {
 			isa = PBXGroup;
 			children = (
+				6948D81C182FDC86008A49CB /* Resources */,
 				6900EBAB182E47BA00BF6783 /* PTAppDelegate.h */,
 				6900EBAC182E47BA00BF6783 /* PTAppDelegate.m */,
 				6900EBAE182E47BA00BF6783 /* MainMenu.xib */,
@@ -179,6 +182,14 @@
 				6900EBC0182E47BA00BF6783 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6948D81C182FDC86008A49CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6948D81A182FDC15008A49CB /* status_bar_icon.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +275,7 @@
 				6900EBB2182E47BA00BF6783 /* Images.xcassets in Resources */,
 				6900EBEE182E579600BF6783 /* PreferencesWindow.xib in Resources */,
 				6900EBAA182E47BA00BF6783 /* Credits.rtf in Resources */,
+				6948D81B182FDC15008A49CB /* status_bar_icon.png in Resources */,
 				6900EBB0182E47BA00BF6783 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
