@@ -18,6 +18,20 @@
 		6900EBBA182E47BA00BF6783 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6900EB99182E47BA00BF6783 /* Cocoa.framework */; };
 		6900EBC2182E47BA00BF6783 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6900EBC0182E47BA00BF6783 /* InfoPlist.strings */; };
 		6900EBC4182E47BA00BF6783 /* puutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6900EBC3182E47BA00BF6783 /* puutTests.m */; };
+		6900EBDB182E49F800BF6783 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6900EBCE182E49F800BF6783 /* .gitignore */; };
+		6900EBDC182E49F800BF6783 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6900EBCF182E49F800BF6783 /* LICENSE */; };
+		6900EBDD182E49F800BF6783 /* MASShortcut+Monitoring.m in Sources */ = {isa = PBXBuildFile; fileRef = 6900EBD1182E49F800BF6783 /* MASShortcut+Monitoring.m */; };
+		6900EBDE182E49F800BF6783 /* MASShortcut+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 6900EBD3182E49F800BF6783 /* MASShortcut+UserDefaults.m */; };
+		6900EBDF182E49F800BF6783 /* MASShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 6900EBD5182E49F800BF6783 /* MASShortcut.m */; };
+		6900EBE0182E49F800BF6783 /* MASShortcutView+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 6900EBD7182E49F800BF6783 /* MASShortcutView+UserDefaults.m */; };
+		6900EBE1182E49F800BF6783 /* MASShortcutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6900EBD9182E49F800BF6783 /* MASShortcutView.m */; };
+		6900EBE2182E49F800BF6783 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6900EBDA182E49F800BF6783 /* README.md */; };
+		6900EBE4182E52BE00BF6783 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6900EBE3182E52BE00BF6783 /* Carbon.framework */; };
+		6900EBE5182E52C600BF6783 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6900EB9C182E47BA00BF6783 /* AppKit.framework */; };
+		6900EBE6182E52CF00BF6783 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6900EB9E182E47BA00BF6783 /* Foundation.framework */; };
+		6900EBED182E579600BF6783 /* PTPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6900EBEB182E579600BF6783 /* PTPreferencesWindowController.m */; };
+		6900EBEE182E579600BF6783 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6900EBEC182E579600BF6783 /* PreferencesWindow.xib */; };
+		6913318A182E71A8005F0776 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 69133189182E71A8005F0776 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +64,25 @@
 		6900EBBF182E47BA00BF6783 /* puutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "puutTests-Info.plist"; sourceTree = "<group>"; };
 		6900EBC1182E47BA00BF6783 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6900EBC3182E47BA00BF6783 /* puutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = puutTests.m; sourceTree = "<group>"; };
+		6900EBCE182E49F800BF6783 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6900EBCF182E49F800BF6783 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6900EBD0182E49F800BF6783 /* MASShortcut+Monitoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcut+Monitoring.h"; sourceTree = "<group>"; };
+		6900EBD1182E49F800BF6783 /* MASShortcut+Monitoring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcut+Monitoring.m"; sourceTree = "<group>"; };
+		6900EBD2182E49F800BF6783 /* MASShortcut+UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcut+UserDefaults.h"; sourceTree = "<group>"; };
+		6900EBD3182E49F800BF6783 /* MASShortcut+UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcut+UserDefaults.m"; sourceTree = "<group>"; };
+		6900EBD4182E49F800BF6783 /* MASShortcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASShortcut.h; sourceTree = "<group>"; };
+		6900EBD5182E49F800BF6783 /* MASShortcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcut.m; sourceTree = "<group>"; };
+		6900EBD6182E49F800BF6783 /* MASShortcutView+UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcutView+UserDefaults.h"; sourceTree = "<group>"; };
+		6900EBD7182E49F800BF6783 /* MASShortcutView+UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcutView+UserDefaults.m"; sourceTree = "<group>"; };
+		6900EBD8182E49F800BF6783 /* MASShortcutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASShortcutView.h; sourceTree = "<group>"; };
+		6900EBD9182E49F800BF6783 /* MASShortcutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcutView.m; sourceTree = "<group>"; };
+		6900EBDA182E49F800BF6783 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		6900EBE3182E52BE00BF6783 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		6900EBEA182E579600BF6783 /* PTPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPreferencesWindowController.h; sourceTree = "<group>"; };
+		6900EBEB182E579600BF6783 /* PTPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPreferencesWindowController.m; sourceTree = "<group>"; };
+		6900EBEC182E579600BF6783 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		69133188182E70F8005F0776 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		69133189182E71A8005F0776 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6900EBE6182E52CF00BF6783 /* Foundation.framework in Frameworks */,
+				6900EBE5182E52C600BF6783 /* AppKit.framework in Frameworks */,
+				6900EBE4182E52BE00BF6783 /* Carbon.framework in Frameworks */,
 				6900EB9A182E47BA00BF6783 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +131,7 @@
 		6900EB98182E47BA00BF6783 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6900EBE3182E52BE00BF6783 /* Carbon.framework */,
 				6900EB99182E47BA00BF6783 /* Cocoa.framework */,
 				6900EBB8182E47BA00BF6783 /* XCTest.framework */,
 				6900EB9B182E47BA00BF6783 /* Other Frameworks */,
@@ -115,11 +152,17 @@
 		6900EB9F182E47BA00BF6783 /* puut */ = {
 			isa = PBXGroup;
 			children = (
+				6900EBCD182E49F800BF6783 /* MASShortcut */,
 				6900EBAB182E47BA00BF6783 /* PTAppDelegate.h */,
 				6900EBAC182E47BA00BF6783 /* PTAppDelegate.m */,
 				6900EBAE182E47BA00BF6783 /* MainMenu.xib */,
 				6900EBB1182E47BA00BF6783 /* Images.xcassets */,
 				6900EBA0182E47BA00BF6783 /* Supporting Files */,
+				6900EBEA182E579600BF6783 /* PTPreferencesWindowController.h */,
+				6900EBEB182E579600BF6783 /* PTPreferencesWindowController.m */,
+				6900EBEC182E579600BF6783 /* PreferencesWindow.xib */,
+				69133188182E70F8005F0776 /* Constants.h */,
+				69133189182E71A8005F0776 /* Constants.m */,
 			);
 			path = puut;
 			sourceTree = "<group>";
@@ -152,6 +195,26 @@
 				6900EBC0182E47BA00BF6783 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6900EBCD182E49F800BF6783 /* MASShortcut */ = {
+			isa = PBXGroup;
+			children = (
+				6900EBCE182E49F800BF6783 /* .gitignore */,
+				6900EBCF182E49F800BF6783 /* LICENSE */,
+				6900EBD0182E49F800BF6783 /* MASShortcut+Monitoring.h */,
+				6900EBD1182E49F800BF6783 /* MASShortcut+Monitoring.m */,
+				6900EBD2182E49F800BF6783 /* MASShortcut+UserDefaults.h */,
+				6900EBD3182E49F800BF6783 /* MASShortcut+UserDefaults.m */,
+				6900EBD4182E49F800BF6783 /* MASShortcut.h */,
+				6900EBD5182E49F800BF6783 /* MASShortcut.m */,
+				6900EBD6182E49F800BF6783 /* MASShortcutView+UserDefaults.h */,
+				6900EBD7182E49F800BF6783 /* MASShortcutView+UserDefaults.m */,
+				6900EBD8182E49F800BF6783 /* MASShortcutView.h */,
+				6900EBD9182E49F800BF6783 /* MASShortcutView.m */,
+				6900EBDA182E49F800BF6783 /* README.md */,
+			);
+			path = MASShortcut;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +294,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6900EBDC182E49F800BF6783 /* LICENSE in Resources */,
+				6900EBDB182E49F800BF6783 /* .gitignore in Resources */,
 				6900EBA4182E47BA00BF6783 /* InfoPlist.strings in Resources */,
+				6900EBE2182E49F800BF6783 /* README.md in Resources */,
 				6900EBB2182E47BA00BF6783 /* Images.xcassets in Resources */,
+				6900EBEE182E579600BF6783 /* PreferencesWindow.xib in Resources */,
 				6900EBAA182E47BA00BF6783 /* Credits.rtf in Resources */,
 				6900EBB0182E47BA00BF6783 /* MainMenu.xib in Resources */,
 			);
@@ -253,8 +320,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6900EBDE182E49F800BF6783 /* MASShortcut+UserDefaults.m in Sources */,
+				6900EBDF182E49F800BF6783 /* MASShortcut.m in Sources */,
 				6900EBAD182E47BA00BF6783 /* PTAppDelegate.m in Sources */,
+				6900EBE0182E49F800BF6783 /* MASShortcutView+UserDefaults.m in Sources */,
+				6900EBE1182E49F800BF6783 /* MASShortcutView.m in Sources */,
+				6900EBED182E579600BF6783 /* PTPreferencesWindowController.m in Sources */,
 				6900EBA6182E47BA00BF6783 /* main.m in Sources */,
+				6900EBDD182E49F800BF6783 /* MASShortcut+Monitoring.m in Sources */,
+				6913318A182E71A8005F0776 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +539,7 @@
 				6900EBC9182E47BA00BF6783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6900EBCA182E47BA00BF6783 /* Build configuration list for PBXNativeTarget "puutTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +548,7 @@
 				6900EBCC182E47BA00BF6783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

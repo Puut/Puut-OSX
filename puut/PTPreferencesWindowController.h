@@ -1,5 +1,5 @@
 //
-//  PTAppDelegate.h
+//  PTPreferencesViewController.h
 //  puut
 //
 //  Created by Jan-Henrik Bruhn on 09.11.13.
@@ -9,9 +9,8 @@
 #import <Cocoa/Cocoa.h>
 #import "MASShortcutView.h"
 
-@interface PTAppDelegate : NSObject <NSApplicationDelegate> {
-    IBOutlet NSMenu *statusMenu;
-    NSStatusItem * statusItem;
+@interface PTPreferencesWindowController : NSWindowController {
 }
+@property (nonatomic, weak) IBOutlet MASShortcutView *shortcutView;
 
 @end

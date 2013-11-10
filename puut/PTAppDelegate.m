@@ -7,12 +7,29 @@
 //
 
 #import "PTAppDelegate.h"
+#import "PTPreferencesWindowController.h"
+#import "Constants.h"
+#import "MASShortcutView.h"
+#import "MASShortcutView+UserDefaults.h"
+#import "MASShortcut+UserDefaults.h"
+#import "MASShortcut+Monitoring.h"
 
 @implementation PTAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    [MASShortcut registerGlobalShortcutWithUserDefaultsKey:ShortcutCapture handler:^{
+        NSLog(@"Heinz!");
+    }];
+}
+
+- (void) awakeFromNib
+{
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    [statusItem setMenu:statusMenu];
+    [statusItem setTitle:@"puut"];
+    [statusItem setHighlightMode:YES];
+    
 }
 
 @end
