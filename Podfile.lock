@@ -1,12 +1,32 @@
 PODS:
+  - AFNetworking (2.0.2):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.0.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.0.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.0.2)
+  - AFNetworking/Security (2.0.2)
+  - AFNetworking/Serialization (2.0.2)
   - FXKeychain (1.4)
   - MASShortcut (1.2.2)
 
 DEPENDENCIES:
+  - AFNetworking (~> 2.0.2)
   - FXKeychain (~> 1.4)
   - MASShortcut (~> 1.2.2)
 
 SPEC CHECKSUMS:
+  AFNetworking: 22de50ae71ab1c4859773f61068d6fcd1d8f9a4d
   FXKeychain: 649efca683aa602c446620701a46780515d25610
   MASShortcut: af4a6217908c78a271deeafa2b9631c69f3fdb46
 
