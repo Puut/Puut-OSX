@@ -1,0 +1,13 @@
+PODS:
+  - FXKeychain (1.4)
+  - MASShortcut (1.2.2)
+
+DEPENDENCIES:
+  - FXKeychain (~> 1.4)
+  - MASShortcut (~> 1.2.2)
+
+SPEC CHECKSUMS:
+  FXKeychain: 649efca683aa602c446620701a46780515d25610
+  MASShortcut: af4a6217908c78a271deeafa2b9631c69f3fdb46
+
+COCOAPODS: 0.27.1
