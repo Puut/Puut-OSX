@@ -30,4 +30,12 @@
     self.shortcutView.associatedUserDefaultsKey = ShortcutCapture;
 }
 
+-(IBAction)applyButtonClicked:(id)selector {
+    [self close];
+}
+
+-(IBAction)serverAuthEnabledButtonClicked:(id)selector {
+    
+}
+
 @end

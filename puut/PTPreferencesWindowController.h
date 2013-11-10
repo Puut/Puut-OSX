@@ -11,6 +11,15 @@
 
 @interface PTPreferencesWindowController : NSWindowController {
 }
+
 @property (nonatomic, weak) IBOutlet MASShortcutView *shortcutView;
+@property (nonatomic, weak) IBOutlet NSTextField *serverUrlTextField;
+@property (nonatomic, weak) IBOutlet NSTextField *serverUsernameTextField;
+@property (nonatomic, weak) IBOutlet NSTextField *serverPasswordTextField;
+@property (nonatomic, weak) IBOutlet NSButton *serverAuthEnabledButton;
+@property (nonatomic, weak) IBOutlet NSButton *applyButton;
+
+-(IBAction) applyButtonClicked:(id)selector;
+-(IBAction) serverAuthEnabledButtonClicked:(id)selector;
 
 @end
