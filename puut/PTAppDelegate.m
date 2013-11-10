@@ -74,6 +74,16 @@
     }];
 }
 
+-(void) showErrorNotification {
+    NSUserNotification *notification = [[NSUserNotification alloc] init];
+    notification.title = @"Error while uploading!";
+    notification.informativeText = @"Are you sure the data is correct?";
+    notification.soundName = NSUserNotificationDefaultSoundName;
+    
+    [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+
+}
+
 - (void) showUploadedNotificationWithUrl:(NSString*) url {
     NSUserNotification *notification = [[NSUserNotification alloc] init];
     notification.title = @"Your Screenshot was uploaded!";
@@ -142,6 +152,7 @@
 
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
+        [self showErrorNotification];
     }];
     op.responseSerializer = [AFHTTPResponseSerializer serializer];
     [[NSOperationQueue mainQueue] addOperation:op];
