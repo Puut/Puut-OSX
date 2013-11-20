@@ -3,61 +3,61 @@
     {
       "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "puut.png",
+      "filename" : "Puut-Logo-16-1.png",
       "scale" : "1x"
     },
     {
       "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "puut-1.png",
+      "filename" : "Puut-Logo-32-2.png",
       "scale" : "2x"
     },
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "puut-9.png",
+      "filename" : "Puut-Logo-32-1.png",
       "scale" : "1x"
     },
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "puut-8.png",
+      "filename" : "Puut-Logo-64.png",
       "scale" : "2x"
     },
     {
       "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "puut-7.png",
+      "filename" : "Puut-Logo-128-1.png",
       "scale" : "1x"
     },
     {
       "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "puut-6.png",
+      "filename" : "Puut-Logo-256-2.png",
       "scale" : "2x"
     },
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "puut-5.png",
+      "filename" : "Puut-Logo-256-1.png",
       "scale" : "1x"
     },
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "puut-4.png",
+      "filename" : "Puut-Logo-512-2.png",
       "scale" : "2x"
     },
     {
       "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "puut-3.png",
+      "filename" : "Puut-Logo-512-1.png",
       "scale" : "1x"
     },
     {
       "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "puut-2.png",
+      "filename" : "Puut-1024.png",
       "scale" : "2x"
     }
   ],
