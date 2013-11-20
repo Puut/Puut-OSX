@@ -1,0 +1,30 @@
+
+/* Class = "NSTextFieldCell"; title = "Password:"; ObjectID = "4lm-zP-F1m"; */
+"4lm-zP-F1m.title" = "Password:";
+
+/* Class = "NSSecureTextFieldCell"; placeholderString = "Password (optional)"; ObjectID = "5NW-w6-vgN"; */
+"5NW-w6-vgN.placeholderString" = "Password (optional)";
+
+/* Class = "NSTextFieldCell"; placeholderString = "URL"; ObjectID = "CeC-zQ-HLk"; */
+"CeC-zQ-HLk.placeholderString" = "URL";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Username (optional)"; ObjectID = "Jmj-DI-XoV"; */
+"Jmj-DI-XoV.placeholderString" = "Username (optional)";
+
+/* Class = "NSTextFieldCell"; title = "Shortcut:"; ObjectID = "PpE-eX-exW"; */
+"PpE-eX-exW.title" = "Shortcut:";
+
+/* Class = "NSTextFieldCell"; title = "Server URL:"; ObjectID = "Qvj-Vn-585"; */
+"Qvj-Vn-585.title" = "Server URL:";
+
+/* Class = "NSWindow"; title = "puut"; ObjectID = "aE2-YI-AYZ"; */
+"aE2-YI-AYZ.title" = "puut";
+
+/* Class = "NSTextFieldCell"; title = "Username:"; ObjectID = "buC-Ne-qRN"; */
+"buC-Ne-qRN.title" = "Username:";
+
+/* Class = "NSButtonCell"; title = "Apply"; ObjectID = "ccr-6l-OgJ"; */
+"ccr-6l-OgJ.title" = "Apply";
+
+/* Class = "NSButtonCell"; title = "Server uses Auth"; ObjectID = "dk5-Rt-pEO"; */
+"dk5-Rt-pEO.title" = "Server uses Auth";
