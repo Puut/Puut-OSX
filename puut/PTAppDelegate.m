@@ -139,6 +139,8 @@
         [formData appendPartWithFileData:[NSData dataWithContentsOfFile:[filePath absoluteString]] name:@"image" fileName:@"image.png" mimeType:@"image/png"];
     }];
     
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    
     if(username != nil && ![username isEqualToString:@""]) {
         NSString *loginString = [@"" stringByAppendingFormat:@"%@:%@", username, password];
         NSString *authHeader = [@"Basic " stringByAppendingFormat:@"%@", [[loginString dataUsingEncoding:NSUTF8StringEncoding] base64EncodedString]];
