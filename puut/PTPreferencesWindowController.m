@@ -42,6 +42,7 @@
 
 -(void)windowDidLoad {
     [super windowDidLoad];
+    
     self.shortcutView.associatedUserDefaultsKey = ShortcutCapture;
     
     NSDictionary *settingsDictionary = [keychain objectForKey: KeychainDictionaryKey];
