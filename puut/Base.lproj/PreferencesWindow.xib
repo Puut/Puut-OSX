@@ -8,6 +8,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="PTPreferencesWindowController">
             <connections>
                 <outlet property="applyButton" destination="yn4-rk-aZX" id="lEe-Qu-dZa"/>
+                <outlet property="progressIndicator" destination="iDc-eN-zZO" id="nA1-qG-lOh"/>
                 <outlet property="serverAuthEnabledCheckbox" destination="LeK-d9-Zxw" id="dgp-k3-g75"/>
                 <outlet property="serverPasswordTextField" destination="uwa-e5-88O" id="SM8-WX-tX4"/>
                 <outlet property="serverUrlTextField" destination="XuP-Je-CxH" id="yUs-hf-qi2"/>
@@ -121,6 +122,10 @@
                             </allowedInputSourceLocales>
                         </secureTextFieldCell>
                     </secureTextField>
+                    <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="iDc-eN-zZO">
+                        <rect key="frame" x="87" y="22" width="16" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </progressIndicator>
                 </subviews>
             </view>
         </window>

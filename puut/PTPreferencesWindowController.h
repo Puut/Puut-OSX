@@ -23,6 +23,7 @@
 @property (nonatomic, weak) IBOutlet NSSecureTextField *serverPasswordTextField;
 @property (nonatomic, weak) IBOutlet NSButton *serverAuthEnabledCheckbox;
 @property (nonatomic, weak) IBOutlet NSButton *applyButton;
+@property (nonatomic, weak) IBOutlet NSProgressIndicator *progressIndicator;
 
 -(IBAction) applyButtonClicked:(id)selector;
 -(IBAction) serverAuthEnabledButtonClicked:(id)selector;
